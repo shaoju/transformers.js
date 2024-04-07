@@ -1,0 +1,12 @@
+directories:
+  output: release-builds
+  buildResources: build
+appId: com.junjie.simpletranslator
+mac:
+  icon: dist/icons/icon.icns
+win:
+  icon: dist/icons/icon.ico
+linux:
+  icon: dist/icons
+files: []
+electronVersion: 29.2.0

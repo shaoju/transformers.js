@@ -12,9 +12,9 @@ function App() {
   const [progressItems, setProgressItems] = useState([]);
 
   // Inputs and outputs
-  const [input, setInput] = useState('I love walking my dog.');
+  const [input, setInput] = useState('Translate me!');
   const [sourceLanguage, setSourceLanguage] = useState('eng_Latn');
-  const [targetLanguage, setTargetLanguage] = useState('fra_Latn');
+  const [targetLanguage, setTargetLanguage] = useState('zho_Hans');
   const [output, setOutput] = useState('');
 
   // Create a reference to the worker object.
@@ -98,7 +98,7 @@ function App() {
       <div className='container'>
         <div className='language-container'>
           <LanguageSelector type={"Source"} defaultLanguage={"eng_Latn"} onChange={x => setSourceLanguage(x.target.value)} />
-          <LanguageSelector type={"Target"} defaultLanguage={"fra_Latn"} onChange={x => setTargetLanguage(x.target.value)} />
+          <LanguageSelector type={"Target"} defaultLanguage={"zho_Hans"} onChange={x => setTargetLanguage(x.target.value)} />
         </div>
 
         <div className='textbox-container'>
